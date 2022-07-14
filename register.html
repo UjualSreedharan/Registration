@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h3>REGISTRATION FORM</h3>
+    <form action="/" name="f1" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="ftname">
+            First Name:<input type="text" name="fname" placeholder="Enter First Name" required><b><span
+                    class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="ltname">
+            Last Name:<input type="text" name="lname" placeholder="Enter Last Name" required><b><span
+                class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="email">
+            Email Id:<input type="email" name="femail" placeholder="Enter Email-Id" required><b><span
+                class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="gender">
+            Gender:<input type="radio" name="fgender1" value="Male" checked required>Male
+            <input type="radio" name="fgender1" value="Female" required>Female
+        </div>
+        <div class="formdesign" id="dob">
+            DOB:<input type="date" name="fdob" required>
+        </div>
+        <div class="formdesign" id="number">
+            Phone Number:<input type="text" name="fnumber" placeholder="Enter Phone Number" required><b><span
+                class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="country">
+            Country:<select>
+                <option>Select</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>Singapore</option>
+                <option>Japan</option>
+                <option>Pakistan</option>
+                <option>Russia</option>
+                <option>China</option>
+                <option>Australia</option>
+                <option>New Zealand</option>
+                <option>England</option>
+            </select>
+        </div>
+        <div class="formdesign" id="password">
+            Password:<input type="password" name="fpassword" placeholder="Enter Password" required><b><span
+                class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="cpassword">
+            Confirm Password:<input type="password" name="fcpassword" placeholder="Enter Confirm Password"
+                required><b><span class="formerror"></span></b>
+        </div>
+        <input class="button" type="submit" value="Register">
+
+
+    </form>
+</body>
+<script src="register.js"></script>
+
+</html>
